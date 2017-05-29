@@ -31,7 +31,7 @@ def start():
             userNumber = int(userEntry)
 
     # --- Use conditional statements if, elif, else ---
-    # --- Use logical operators and, or (not is below) ---
+    # --- Use logical operators and & or (not is below) ---
             if userNumber > 0 and userNumber < 6:
                 print('\nNow we\'ll use your number to do some things with our variables!')
             else:
@@ -46,7 +46,7 @@ def start():
 
 
 def useVariables(userNumber,x,y,sentence):
-    # --- Use operators +,- ---
+    # --- Use operators *, /, +, -, % ---
     print '\nYou\'re number is {}:'.format(userNumber)
     time.sleep(1)
     print '\t{} times x equals '.format(userNumber) + str(x * userNumber)
@@ -85,7 +85,7 @@ def loopTuple(userNumber):
     time.sleep(1)
     print '\nWe\'re almost done!'
 
-    # --- Use logical operator not (and and or are above) ---
+    # --- Use logical operator not (and & or are above) ---
     if not (userNumber == 1):
         print 'Since your number is {}, here are {} things we learned about today:'.format(userNumber,userNumber)
     else:
