@@ -25,8 +25,11 @@ II) (item #46) Range function:
 following:
 
  0
+
  1
+
  2
+
  3
 
 2. Use the Python range() function with 3 parameters to display the following:
