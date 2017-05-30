@@ -1,3 +1,7 @@
+# Python 3.6.1
+# author: Peter Rossing
+# Tech Academy - Python Course, Range Drill (Item 46)
+
 
 num_list = [0,1,2,3,4,5,6,7,8]
 
