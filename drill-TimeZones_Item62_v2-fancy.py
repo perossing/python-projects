@@ -10,7 +10,7 @@ import datetime
 def start():
     
     #for testing...
-    #portlandTime = '24:08'
+    #portlandTime = '21:08'
     
     portlandTime = datetime.datetime.now().strftime('%H:%M')
     portlandHour = int(portlandTime[0:2]) # slices first two digits from string and converts to integer
@@ -44,25 +44,29 @@ def start():
             print 'Please enter either New York or London...'
 
 
-def convertTime(hour12, minutes):  # converts 24-hour time to 12-hour time and adds A.M. or P.M.
+def convertTime(cityhours, minutes):  # converts 24-hour time to 12-hour time and adds A.M. or P.M.
     
     am_pm = 'A.M.'
-    
-    if hour12 > 12:
-        hour12 -= 12
-        am_pm = 'P.M.'    
 
-    return str(hour12) + ':' + minutes + ' ' + am_pm
+    if cityhours > 11 and cityhours < 24:
+        am_pm = 'P.M.'
+
+    if cityhours > 24:
+        cityhours -= 24  # numbers 25 & up get reset to 1 & up       
+   
+    #hour12 = cityhours
+    
+    if cityhours > 12:
+        cityhours -= 12   
+
+    return str(cityhours) + ':' + minutes + ' ' + am_pm
 
 
 def printInfo(city, minutes, portlandHour):
 
-    if city.hour > 24:
-        city.hour -= 24  # numbers 25 & up get reset to 1 & up 
+    cityhours = city.hour
 
-    hour12 = city.hour
-
-    fullTime = convertTime(hour12,minutes)
+    fullTime = convertTime(cityhours,minutes)
     portlandFull = convertTime(portlandHour, minutes)
     
     open_closed = 'OPEN' 
