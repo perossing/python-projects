@@ -59,4 +59,55 @@ Guidelines:
 
 - Use Datetime Module
 
-- Execute program on the Shell
+- Execute program on the Shell
+
+
+V) (item #63) File Mover:
+
+Scenario: Your employer wants a program to move all his .txt files from one folder to another
+with the click of a click of a button. On your desktop make 2 new folders. Call one Folder A &
+the second Folder B. Create 4 random .txt files & put them in Folder A. Plan: Move the files from Folder A to Folder B. Print out each file path that got moved onto the shell. Upon viewing Folder A after the execution, the moved files should not be there.
+
+Guidelines:
+
+- Use Python 2.7 .x on this drill.
+
+- Import the shutil module.
+
+- Run it on the python shell.
+
+- Use the IDLE for this Drill.
+
+
+VI) (item #64)  Daily File Transfer:
+Scenario: Your company's users create or edit a collection of text files throughout the day. Once per day, any files that are new, or that were edited within the previous 24 hours, must be sent to the home office. To facilitate this, these new or updated files need to be copied to a specific 'destination' folder on a computer, so that a special file transfer program can grab them and transfer them to the home office. The process of figuring out which files are new or recently edited, and copying them to the 'destination' folder, is currently being done manually. You have been asked to create a script that will automate this task.
+
+Guidelines:
+Use Python 2.x
+
+
+VII) (item #65) UI for File Transfer project:
+
+Users are asking for a user interface to make using the script easier and more versatile.
+Desired features of the UI:
+
+- Allow the user to browse to and choose a specific folder that will contain the
+files to be checked daily.
+
+- Allow the user to browse to and choose a specific folder that will receive the
+copied files.
+
+- Allow the user to manually initiate the 'file check' process that is performed by
+the script.
+
+
+Guidelines:
+
+- Use Python 3.4 for this drill.
+
+- Use tkinter to create the UI.
+
+- The layout of the UI is up to you.
+
+- You should use IDLE for this Drill. 
+
